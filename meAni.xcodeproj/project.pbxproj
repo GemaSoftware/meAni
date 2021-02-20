@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		37FC015325E09C49001F3201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC015225E09C49001F3201 /* ContentView.swift */; };
 		37FC015525E09C4A001F3201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FC015425E09C4A001F3201 /* Assets.xcassets */; };
 		37FC015825E09C4A001F3201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FC015725E09C4A001F3201 /* Preview Assets.xcassets */; };
+		37FC016125E0A3E5001F3201 /* TopAiringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC016025E0A3E5001F3201 /* TopAiringView.swift */; };
+		37FC016425E0A3F6001F3201 /* JikanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC016325E0A3F6001F3201 /* JikanService.swift */; };
+		37FC016725E0A5F6001F3201 /* TopAiringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC016625E0A5F6001F3201 /* TopAiringModel.swift */; };
+		37FC016F25E0D2A9001F3201 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 37FC016E25E0D2A9001F3201 /* URLImage */; };
+		37FC017225E0D697001F3201 /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC017125E0D697001F3201 /* AnimeView.swift */; };
+		37FC017525E0DA88001F3201 /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC017425E0DA88001F3201 /* AnimeModel.swift */; };
+		37FC017925E19F8C001F3201 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC017825E19F8C001F3201 /* HomeView.swift */; };
+		37FC017C25E1A040001F3201 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC017B25E1A040001F3201 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		37FC015425E09C4A001F3201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37FC015725E09C4A001F3201 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37FC015925E09C4A001F3201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37FC016025E0A3E5001F3201 /* TopAiringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAiringView.swift; sourceTree = "<group>"; };
+		37FC016325E0A3F6001F3201 /* JikanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanService.swift; sourceTree = "<group>"; };
+		37FC016625E0A5F6001F3201 /* TopAiringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAiringModel.swift; sourceTree = "<group>"; };
+		37FC017125E0D697001F3201 /* AnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeView.swift; sourceTree = "<group>"; };
+		37FC017425E0DA88001F3201 /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		37FC017825E19F8C001F3201 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		37FC017B25E1A040001F3201 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FC016F25E0D2A9001F3201 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +68,18 @@
 		37FC014F25E09C49001F3201 /* meAni */ = {
 			isa = PBXGroup;
 			children = (
+				37FC015625E09C4A001F3201 /* Preview Content */,
 				37FC015025E09C49001F3201 /* meAniApp.swift */,
 				37FC015225E09C49001F3201 /* ContentView.swift */,
 				37FC015425E09C4A001F3201 /* Assets.xcassets */,
 				37FC015925E09C4A001F3201 /* Info.plist */,
-				37FC015625E09C4A001F3201 /* Preview Content */,
+				37FC017825E19F8C001F3201 /* HomeView.swift */,
+				37FC016025E0A3E5001F3201 /* TopAiringView.swift */,
+				37FC017B25E1A040001F3201 /* SearchView.swift */,
+				37FC017125E0D697001F3201 /* AnimeView.swift */,
+				37FC016325E0A3F6001F3201 /* JikanService.swift */,
+				37FC017425E0DA88001F3201 /* AnimeModel.swift */,
+				37FC016625E0A5F6001F3201 /* TopAiringModel.swift */,
 			);
 			path = meAni;
 			sourceTree = "<group>";
@@ -85,6 +108,9 @@
 			dependencies = (
 			);
 			name = meAni;
+			packageProductDependencies = (
+				37FC016E25E0D2A9001F3201 /* URLImage */,
+			);
 			productName = meAni;
 			productReference = 37FC014D25E09C49001F3201 /* meAni.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 37FC014425E09C48001F3201;
+			packageReferences = (
+				37FC016D25E0D2A9001F3201 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 37FC014E25E09C49001F3201 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FC016725E0A5F6001F3201 /* TopAiringModel.swift in Sources */,
+				37FC017C25E1A040001F3201 /* SearchView.swift in Sources */,
 				37FC015325E09C49001F3201 /* ContentView.swift in Sources */,
+				37FC017225E0D697001F3201 /* AnimeView.swift in Sources */,
 				37FC015125E09C49001F3201 /* meAniApp.swift in Sources */,
+				37FC016125E0A3E5001F3201 /* TopAiringView.swift in Sources */,
+				37FC017925E19F8C001F3201 /* HomeView.swift in Sources */,
+				37FC017525E0DA88001F3201 /* AnimeModel.swift in Sources */,
+				37FC016425E0A3F6001F3201 /* JikanService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37FC016D25E0D2A9001F3201 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37FC016E25E0D2A9001F3201 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37FC016D25E0D2A9001F3201 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37FC014525E09C48001F3201 /* Project object */;
 }
