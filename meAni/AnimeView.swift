@@ -27,10 +27,19 @@ struct AnimeView: View {
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                    }).frame(width: 200, height: 275)
+                    }).frame(width: 200, height: 280).padding(.top)
                 }
-                Text(self.anime.title).fontWeight(.bold).font(.title)
-                Text(self.anime.synopsis).font(.body).fontWeight(.light)
+                Text(self.anime.title).fontWeight(.bold).font(.title).padding(.horizontal).multilineTextAlignment(.center)
+                
+                VStack(alignment: .leading){
+                    HStack{
+                        Text("Synopsis").font(.title2).fontWeight(.medium).padding(.top)
+                    }
+                    Text(self.anime.synopsis).font(.body).fontWeight(.light).multilineTextAlignment(.leading).lineLimit(6)
+                }.padding(.horizontal)
+                
+                
+                
                 Spacer()
                 
             }

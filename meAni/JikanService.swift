@@ -25,6 +25,19 @@ class JikanService {
         }.resume()
     }
     
+    func GetTopAnime(completion:@escaping ([TopAiringAnime]) -> ()) {
+        guard let topURL = URL(string: self.mainURL+"top/anime/1") else {
+            return
+        }
+        URLSession.shared.dataTask(with: topURL) { (data, _, _) in
+            let animes = try! JSONDecoder().decode(Top.self, from: data!)
+            
+            DispatchQueue.main.async {
+                completion(animes.top)
+            }
+        }.resume()
+    }
+    
     func GetAnimeByID(mal_id: Int, completion:@escaping (AnimeModel) -> ()) {
         guard let animeURL = URL(string: self.mainURL+"anime/\(mal_id)") else {
             return

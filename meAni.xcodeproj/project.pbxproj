@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A07611025E1BDC00008DA6C /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */; };
 		37FC015125E09C49001F3201 /* meAniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC015025E09C49001F3201 /* meAniApp.swift */; };
 		37FC015325E09C49001F3201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC015225E09C49001F3201 /* ContentView.swift */; };
 		37FC015525E09C4A001F3201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FC015425E09C4A001F3201 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		37FC014D25E09C49001F3201 /* meAni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meAni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FC015025E09C49001F3201 /* meAniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meAniApp.swift; sourceTree = "<group>"; };
 		37FC015225E09C49001F3201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				37FC015625E09C4A001F3201 /* Preview Content */,
 				37FC015025E09C49001F3201 /* meAniApp.swift */,
 				37FC015225E09C49001F3201 /* ContentView.swift */,
+				1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */,
 				37FC015425E09C4A001F3201 /* Assets.xcassets */,
 				37FC015925E09C4A001F3201 /* Info.plist */,
 				37FC017825E19F8C001F3201 /* HomeView.swift */,
@@ -175,6 +178,7 @@
 				37FC016125E0A3E5001F3201 /* TopAiringView.swift in Sources */,
 				37FC017925E19F8C001F3201 /* HomeView.swift in Sources */,
 				37FC017525E0DA88001F3201 /* AnimeModel.swift in Sources */,
+				1A07611025E1BDC00008DA6C /* ImageCarouselView.swift in Sources */,
 				37FC016425E0A3F6001F3201 /* JikanService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
