@@ -14,7 +14,7 @@ struct AnimeSearchResults: Codable, Identifiable {
 
 struct AnimeSearch: Codable, Identifiable {
     let id = UUID()
-    let mal_id: Int
-    let title: String
-    let image_url: String
+    let mal_id: Int?
+    let title: String?
+    let image_url: String?
 }

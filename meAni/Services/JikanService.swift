@@ -55,7 +55,7 @@ class JikanService {
     
     func SearchAnime(searchQuery:String, completion:@escaping ([AnimeSearch]) -> ()) {
         let encodedQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-        guard let topURL = URL(string: self.mainURL+"search/anime?q=\(encodedQuery!)&page=1&limit=15") else {
+        guard let topURL = URL(string: self.mainURL+"search/anime?q=\(encodedQuery!)&page=1&limit=7") else {
             return
         }
         URLSession.shared.dataTask(with: topURL) { (data, _, _) in
