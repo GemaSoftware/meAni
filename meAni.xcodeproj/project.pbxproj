@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A07611025E1BDC00008DA6C /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */; };
+		371CCA5325E1DEAE00B5703F /* AnimeSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CCA5225E1DEAE00B5703F /* AnimeSearchModel.swift */; };
 		37FC015125E09C49001F3201 /* meAniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC015025E09C49001F3201 /* meAniApp.swift */; };
 		37FC015325E09C49001F3201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC015225E09C49001F3201 /* ContentView.swift */; };
 		37FC015525E09C4A001F3201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FC015425E09C4A001F3201 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		371CCA5225E1DEAE00B5703F /* AnimeSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSearchModel.swift; sourceTree = "<group>"; };
 		37FC014D25E09C49001F3201 /* meAni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meAni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FC015025E09C49001F3201 /* meAniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meAniApp.swift; sourceTree = "<group>"; };
 		37FC015225E09C49001F3201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,19 +72,13 @@
 		37FC014F25E09C49001F3201 /* meAni */ = {
 			isa = PBXGroup;
 			children = (
+				37FC018125E1D6D2001F3201 /* Services */,
+				37FC018025E1D6B9001F3201 /* Views */,
+				37FC017F25E1D6A5001F3201 /* Models */,
 				37FC015625E09C4A001F3201 /* Preview Content */,
 				37FC015025E09C49001F3201 /* meAniApp.swift */,
-				37FC015225E09C49001F3201 /* ContentView.swift */,
-				1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */,
 				37FC015425E09C4A001F3201 /* Assets.xcassets */,
 				37FC015925E09C4A001F3201 /* Info.plist */,
-				37FC017825E19F8C001F3201 /* HomeView.swift */,
-				37FC016025E0A3E5001F3201 /* TopAiringView.swift */,
-				37FC017B25E1A040001F3201 /* SearchView.swift */,
-				37FC017125E0D697001F3201 /* AnimeView.swift */,
-				37FC016325E0A3F6001F3201 /* JikanService.swift */,
-				37FC017425E0DA88001F3201 /* AnimeModel.swift */,
-				37FC016625E0A5F6001F3201 /* TopAiringModel.swift */,
 			);
 			path = meAni;
 			sourceTree = "<group>";
@@ -93,6 +89,37 @@
 				37FC015725E09C4A001F3201 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37FC017F25E1D6A5001F3201 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37FC017425E0DA88001F3201 /* AnimeModel.swift */,
+				37FC016625E0A5F6001F3201 /* TopAiringModel.swift */,
+				371CCA5225E1DEAE00B5703F /* AnimeSearchModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37FC018025E1D6B9001F3201 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A07610F25E1BDC00008DA6C /* ImageCarouselView.swift */,
+				37FC015225E09C49001F3201 /* ContentView.swift */,
+				37FC017825E19F8C001F3201 /* HomeView.swift */,
+				37FC016025E0A3E5001F3201 /* TopAiringView.swift */,
+				37FC017B25E1A040001F3201 /* SearchView.swift */,
+				37FC017125E0D697001F3201 /* AnimeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37FC018125E1D6D2001F3201 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				37FC016325E0A3F6001F3201 /* JikanService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +202,7 @@
 				37FC015325E09C49001F3201 /* ContentView.swift in Sources */,
 				37FC017225E0D697001F3201 /* AnimeView.swift in Sources */,
 				37FC015125E09C49001F3201 /* meAniApp.swift in Sources */,
+				371CCA5325E1DEAE00B5703F /* AnimeSearchModel.swift in Sources */,
 				37FC016125E0A3E5001F3201 /* TopAiringView.swift in Sources */,
 				37FC017925E19F8C001F3201 /* HomeView.swift in Sources */,
 				37FC017525E0DA88001F3201 /* AnimeModel.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import Foundation
 import Network
+import SwiftUI
 
 class JikanService {
     
@@ -51,4 +52,20 @@ class JikanService {
             }
         }.resume()
     }
+    
+    func SearchAnime(searchQuery:String, completion:@escaping ([AnimeSearch]) -> ()) {
+        let encodedQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        guard let topURL = URL(string: self.mainURL+"search/anime?q=\(encodedQuery!)&page=1&limit=15") else {
+            return
+        }
+        URLSession.shared.dataTask(with: topURL) { (data, _, _) in
+            let animes = try! JSONDecoder().decode(AnimeSearchResults.self, from: data!)
+            print("got animes from search")
+            
+            DispatchQueue.main.async {
+                completion(animes.results)
+            }
+        }.resume()
+    }
+    
 }
